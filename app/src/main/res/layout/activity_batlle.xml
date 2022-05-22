@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Batlle">
+
+    <ImageView
+        android:id="@+id/image_arena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arena"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <ImageView
+        android:id="@+id/zeus"
+        android:layout_width="287dp"
+        android:layout_height="249dp"
+        app:srcCompat="@drawable/zeus"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="162dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"/>
+
+    <ImageView
+        android:id="@+id/sven"
+        android:layout_width="253dp"
+        android:layout_height="245dp"
+        app:srcCompat="@drawable/sven"
+        tools:layout_editor_absoluteX="410dp"
+        tools:layout_editor_absoluteY="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/chose"
+        android:layout_centerHorizontal="true">
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="190dp"
+        android:layout_height="61dp"
+        android:background="#FF0000"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Choose Your Attack"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/enemyAttack1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:text="Enemy Attack Is"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="287dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+        <ImageView
+            android:id="@+id/enemyAttack"
+            android:layout_width="100dp"
+            android:layout_height="104dp"
+            tools:layout_editor_absoluteX="287dp"
+            tools:layout_editor_absoluteY="48dp"
+            tools:srcCompat="@tools:sample/avatars" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/zeus">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="#FFFFFF"
+            android:text="Zeus"
+            android:textColor="#00BCD4"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:text="HP : "
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="130dp" />
+        <TextView
+            android:id="@+id/playerHp"
+            android:layout_width="49dp"
+            android:layout_height="32dp"
+            android:background="#FFFFFF"
+            android:text="100"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="130dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/btn_scisors"
+            android:layout_width="58dp"
+            android:layout_height="98dp"
+            android:background="@drawable/scisors"
+            tools:layout_editor_absoluteX="297dp"
+            tools:layout_editor_absoluteY="306dp" />
+
+        <ImageButton
+            android:id="@+id/btn_rock"
+            android:layout_width="62dp"
+            android:layout_height="98dp"
+            android:background="@drawable/rock"
+            tools:layout_editor_absoluteX="362dp"
+            tools:layout_editor_absoluteY="307dp" />
+
+        <ImageButton
+            android:id="@+id/btn_paper"
+            android:layout_width="54dp"
+            android:layout_height="97dp"
+            app:srcCompat="@drawable/paper"
+            tools:layout_editor_absoluteX="462dp"
+            tools:layout_editor_absoluteY="307dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sven"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:text="Sven"
+            android:textColor="#00BCD4"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="410dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HP:"
+            android:textColor="#00BCD4"
+            android:textSize="24sp"
+            android:background="#FFFFFF"/>
+
+
+        <TextView
+            android:id="@+id/tv_enemyHp"
+            android:layout_width="60dp"
+            android:layout_height="31dp"
+            android:background="#FFFFFF"
+            android:text="100"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="528dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_volume_up_24" />
+
+
+</RelativeLayout>
